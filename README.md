@@ -21,3 +21,12 @@ Processing online streaming application tracker data. Tracker data are simulated
 - Kafka
 - Python-Kafka
 - PostgreSQL
+
+### [Project 07 - DataOps and MLOps](./07-dataops-and-mlops)
+
+Creating simple model and deploy it as an API. Simulating Loan Eligibility classifier.
+
+**Tools**
+- Scikit-Learn
+- Joblib
+- FastAPI
