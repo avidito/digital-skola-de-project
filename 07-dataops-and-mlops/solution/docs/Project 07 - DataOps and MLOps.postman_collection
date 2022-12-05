@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "d13eec78-c24f-4f39-afe4-03f7bcf022cf",
+		"name": "Project 07 - DataOps and MLOps - PCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14055399"
+	},
+	"item": [
+		{
+			"name": "Predict (V1)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Gender\": \"Male\",\r\n    \"Married\": \"Yes\",\r\n    \"Dependents\": 1,\r\n    \"Education\": \"Graduate\",\r\n    \"Self_Employed\": \"No\",\r\n    \"ApplicantIncome\": 3000,\r\n    \"CoapplicantIncome\": 1000.0,\r\n    \"LoanAmount\": 200.0,\r\n    \"Loan_Amount_Term\": 360.0,\r\n    \"Credit_History\": 1.0,\r\n    \"Property_Area\": \"Semiurban\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict (V2)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Gender\": \"Male\",\r\n    \"Married\": \"Yes\",\r\n    \"Dependents\": 1,\r\n    \"Education\": \"Graduate\",\r\n    \"Self_Employed\": \"No\",\r\n    \"ApplicantIncome\": 3000,\r\n    \"CoapplicantIncome\": 1000.0,\r\n    \"LoanAmount\": 200.0,\r\n    \"Loan_Amount_Term\": 360.0,\r\n    \"Credit_History\": 1.0,\r\n    \"Property_Area\": \"Semiurban\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v2/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
