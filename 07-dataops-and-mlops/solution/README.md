@@ -50,6 +50,21 @@ Full notebook in [Project 07 - Loan Eligibility](https://colab.research.google.c
 
 <br>
 
+**Script Description**
+
+1. `main.py` is the main interface, where the routes are defined. Routes are path or URL that can be accessed in API. In `main.py`, routers are imported from respective `api`, such as `api.v1.routers` (see `api/v1/routers` to find router definition).
+
+2. `api` is collection of API backend, organized by its version. Each version consist of:
+    - `classifier`: directory for model in joblib format.
+    - `backend.py`: logical definition or functionality.
+    - `routers.py`: router/url definition.
+
+3. Route in `routers.py` will need at least 2 things: `path` (like `/predic`) and input format (like `dm.UserInput`). Input format will validate and acquire data on request (see `modules/data_model.py` to find input format structure in Pydantic model).
+
+4. In `backend.py`, request are processed by taking its input (body data) and use it to predict result. Model are imported from `classifier` directory with joblib modules.
+
+<br>
+
 **Data Input**
 
 |Key|Data Type|Description|
